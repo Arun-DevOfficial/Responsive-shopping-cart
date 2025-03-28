@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">Next Store</div>
+            <div class="cart-icon" id="open-cart">
+                🛒 <span class="cart-count" id="cart-count">0</span>
+            </div>
+        </header>
+        
+        <main>
+            <div class="products-grid" id="products-grid">
+                <!-- Products will be dynamically added here -->
+            </div>
+        </main>
+    </div>
+    
+    <div class="overlay" id="overlay"></div>
+    
+    <div class="cart-container" id="cart-container">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" id="close-cart">✕</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div class="cart-total">
+            <span>Total:</span>
+            <span id="cart-total">$0.00</span>
+        </div>
+        <button class="checkout-btn" id="checkout-btn">Checkout</button>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
